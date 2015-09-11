@@ -4,7 +4,8 @@ build:
 test:
 	PYTHONPATH=shims \
 	python -m unittest discover \
-	  --start-directory=exercises --pattern="exercise*.py" --failfast
+	  --start-directory=exercises --pattern="exercise*.py" \
+	  --failfast
 
 test/%:
 	PYTHONPATH=shims \

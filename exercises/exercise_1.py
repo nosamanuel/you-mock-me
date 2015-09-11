@@ -2,11 +2,8 @@
 mock.patch
 """
 from unittest import TestCase
-try:
-    from unittest import mock
-except:
-    # Python 2
-    import mock
+
+from shims import mock
 
 
 class ExcerciseTests(TestCase):

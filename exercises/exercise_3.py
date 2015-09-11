@@ -2,11 +2,8 @@
 mock an external web request
 """
 from unittest import TestCase
-try:
-    from unittest import mock
-except:
-    # Python 2
-    import mock
+
+from shims import mock
 
 from example.thing import get_that_thing, get_that_json
 
